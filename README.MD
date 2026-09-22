@@ -1,3 +1,4 @@
+![](https://img.shields.io/badge/license-MIT-blue)
 
 # 簡介
 XmlAdapter 是 ScintillaNet 懶得打程式碼，改用 XML 快速建立自訂高亮。
