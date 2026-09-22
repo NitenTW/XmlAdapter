@@ -21,7 +21,7 @@ End Sub
 
 <br>
 
-然後在表單的 Load() 事件裡讀入的高亮設定檔
+然後在表單的 Load() 事件裡讀入高亮的設定檔
 ```vbnet
 Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
     scintilla1.Dock = DockStyle.Fill
