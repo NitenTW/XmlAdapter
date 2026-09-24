@@ -1,5 +1,5 @@
 ﻿Public Class XmlAdapter
-    Const DefaultID As Integer = 0
+    Const DefaultID As Integer = 32
 
     Friend keyWordGroup As New Dictionary(Of String, List(Of Dictionary(Of Integer, List(Of String))))
 
