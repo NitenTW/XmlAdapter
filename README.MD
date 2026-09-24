@@ -95,6 +95,10 @@ sample.xml
 ```
 分成四大類 **DEFAULT**、**KEYWORD**、**STRING**、**COMMENT**，將想高亮的關鍵字分別放入四類中。ID 0 是文件要用的預設字型，其他的只要 ID 不重覆即可。
 
+>每個大類別的字型和大小都要分別設定
+
+<br>
+
 ForeColor 的值用 Color.ToARGB() 的值
 
 FillLine 是整行背景色
