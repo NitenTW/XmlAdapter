@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/license-MIT-blue)
+I![](https://img.shields.io/badge/license-MIT-blue)
 
 # 簡介
 XmlAdapter 是 ScintillaNet 懶得打程式碼，改用 XML 快速建立自訂高亮。
@@ -30,10 +30,13 @@ Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     Me.Controls.Add(scintilla1)
 
-    scintilla1.StyleResetDefault()
+    scintilla1.StyleResetDefault()   '將預設樣式重設為預設值
 
     scintilla1.Technology = ScintillaNET.Technology.DirectWrite '開啟字型連字
-    scintilla1.StyleClearAll()
+    scintilla1.Styles(Style.Default).Font = "Arial"
+    scintilla1.Styles(Style.Default).Size = 12
+    scintilla1.Styles(Style.Default).ForeColor = Color.Gray
+    scintilla1.StyleClearAll()   '重設為目前「預設樣式」所定義的值
 
     '讀入xml中的各項設定 (必需在 scintilla1.StyleClearAll() 之後
     xmladapter1.Load("D:\sample.xml", scintilla1)
@@ -93,7 +96,7 @@ sample.xml
   </Style>
 </Styles>
 ```
-分成四大類 **DEFAULT**、**KEYWORD**、**STRING**、**COMMENT**，將想高亮的關鍵字分別放入四類中。ID 0 是文件要用的預設字型，其他的只要 ID 不重覆即可。
+分成四大類 **DEFAULT**、**KEYWORD**、**STRING**、**COMMENT**，將想高亮的關鍵字分別放入四類中。ID 32 是文件的預設值，避免使用。其他的只要 ID 不重覆即可。
 
 >每個大類別的字型和大小都要分別設定
 
