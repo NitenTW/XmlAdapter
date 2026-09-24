@@ -30,8 +30,7 @@ Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     Me.Controls.Add(scintilla1)
 
-    scintilla1.StyleResetDefault()   '將預設樣式重設為預設值
-
+    scintilla1.StyleResetDefault()   '將預設樣式重設為預設值
     scintilla1.Technology = ScintillaNET.Technology.DirectWrite '開啟字型連字
     scintilla1.Styles(Style.Default).Font = "Arial"
     scintilla1.Styles(Style.Default).Size = 12
