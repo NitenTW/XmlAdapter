@@ -33,8 +33,6 @@ Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
     scintilla1.StyleResetDefault()
 
     scintilla1.Technology = ScintillaNET.Technology.DirectWrite '開啟字型連字
-    scintilla1.Styles(0).Font = "Fira Code" '0 為文件要使用的預設字型
-    scintilla1.Styles(0).Size = 12
     scintilla1.StyleClearAll()
 
     '讀入xml中的各項設定 (必需在 scintilla1.StyleClearAll() 之後
