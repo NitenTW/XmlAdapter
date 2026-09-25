@@ -49,7 +49,7 @@ sample.xml
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <Styles>
-  <Style Type="DEFAULT" ID="0">
+  <Style Type="DEFAULT" ID="32">
     <!--預設-->
     <Font Size="12" SizeF="12.0" />
   </Style>
