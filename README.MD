@@ -35,7 +35,7 @@ Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
     scintilla1.Styles(Style.Default).Font = "Arial"
     scintilla1.Styles(Style.Default).Size = 12
     scintilla1.Styles(Style.Default).ForeColor = Color.Gray
-    scintilla1.StyleClearAll()   '重設為目前「預設樣式」所定義的值
+    scintilla1.StyleClearAll()   '將Styles陣列中的樣式全部設為目前「預設樣式」所定義的值
 
     '讀入xml中的各項設定 (必需在 scintilla1.StyleClearAll() 之後
     xmladapter1.Load("D:\sample.xml", scintilla1)
@@ -96,8 +96,6 @@ sample.xml
 </Styles>
 ```
 分成四大類 **DEFAULT**、**KEYWORD**、**STRING**、**COMMENT**，將想高亮的關鍵字分別放入四類中。ID 32 是文件的預設值，避免使用。其他的只要 ID 不重覆即可。
-
->每個大類別的字型和大小都要分別設定
 
 <br>
 
